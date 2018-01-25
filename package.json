@@ -1,0 +1,23 @@
+{
+  "name": "hangman_node",
+  "version": "1.0.0",
+  "description": "node hangman",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmederos/hangman_node.git"
+  },
+  "author": "Trish Mederos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmederos/hangman_node/issues"
+  },
+  "homepage": "https://github.com/tmederos/hangman_node#readme",
+  "dependencies": {
+    "inquirer": "^5.0.1",
+    "is-letter": "^1.1.1"
+  }
+}
