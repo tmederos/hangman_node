@@ -13,21 +13,22 @@ console.log( "" );
 console.log( "You have " + remainingGuesses + " guesses remaining."  );
 var showWord = game.pickTheWord();
 var secretWord = showWord.toLowerCase();
-console.log( "Secret word - " + secretWord );
+// console.log( "Secret word - " + secretWord );
 var word = new Word( secretWord );
 var displayWord = word.getDisplay();
 console.log( "Display word " + displayWord );
+console.log( "" );
 
 function PromptForLetter(){
   //
   if ( word.checkSolved() ){
     console.log( "Congratulations you guessed the word!  " + showWord );
-    restartGame();
+    // restartGame();
     return;
   }
   if ( remainingGuesses === 0 ){
     console.log( "Game Over. You ran out of guesses. The word was - " + showWord );
-    restartGame();
+    // restartGame();
     return;
   }
 
@@ -85,29 +86,29 @@ function PromptForLetter(){
 
 PromptForLetter();
 
-function restartGame() {
-  console.log("")
-  inquirer.prompt([{
-    name: "play",
-    type: "confirm",
-    message: "Would you like to play the Hangman game again?"
-  }]).then( function( answer ) {
-    if ( !answer.play ){
-      console.log( "Good-bye.");
-      return;
-    }
-    else
-    {
-      remainingGuesses = 7;
-      guessedArray = [];
-      console.log( "" );
-      console.log("Starting a new game ==================");
-      var showWord = game.pickTheWord();
-      var secretWord = showWord.toLowerCase();
-      console.log( "Secret word - " + secretWord );
-      var word = new Word( secretWord );
-      var displayWord = word.getDisplay();
-      console.log( "Display word " + displayWord );
-      PromptForLetter();
-    }
-})};
+// function restartGame() {
+//   console.log("")
+//   inquirer.prompt([{
+//     name: "play",
+//     type: "confirm",
+//     message: "Would you like to play the Hangman game again?"
+//   }]).then( function( answer ) {
+//     if ( !answer.play ){
+//       console.log( "Good-bye.");
+//       return;
+//     }
+//     else
+//     {
+//       remainingGuesses = 7;
+//       guessedArray = [];
+//       console.log( "" );
+//       console.log("Starting a new game ==================");
+//       var showWord = game.pickTheWord();
+//       var secretWord = showWord.toLowerCase();
+//       console.log( "Secret word - " + secretWord );
+//       var word = new Word( secretWord );
+//       var displayWord = word.getDisplay();
+//       console.log( "Display word " + displayWord );
+//       PromptForLetter();
+//     }
+// })};

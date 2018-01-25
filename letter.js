@@ -11,7 +11,6 @@ Letter.prototype.getDisplay = function(){
   return this.letter;
 };
 
-
 Letter.prototype.guess = function (userGuess) {
   if ( userGuess.toLowerCase() === this.letter.toLowerCase()) {
     this.guessed = true;

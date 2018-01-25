@@ -44,7 +44,7 @@ Word.prototype.checkSolved = function () {
 // console.log( "Is Letter in Word - " + checkGuess );
 // console.log( "Display - " + word.getDisplay( "l" ) );
 
-// console.log( "Found!!!!!!!!! "+  a.letter  ) );
+// console.log( "Found! "+  a.letter  ) );
 
 // var displayWord = word.getDisplay();
 // console.log( "Display word " + displayWord );
