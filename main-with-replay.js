@@ -13,11 +13,10 @@ console.log( "" );
 console.log( "You have " + remainingGuesses + " guesses remaining."  );
 var showWord = game.pickTheWord();
 var secretWord = showWord.toLowerCase();
-// console.log( "Secret word - " + secretWord );
+console.log( "Secret word - " + secretWord );
 var word = new Word( secretWord );
 var displayWord = word.getDisplay();
 console.log( "Display word " + displayWord );
-console.log( "" );
 
 function PromptForLetter(){
   //
@@ -103,10 +102,11 @@ function restartGame() {
       guessedArray = [];
       console.log( "" );
       console.log("Starting a new game ==================");
-      showWord = game.pickTheWord();
-      secretWord = showWord.toLowerCase();
-      word = new Word( secretWord );
-      displayWord = word.getDisplay();
+      var showWord = game.pickTheWord();
+      var secretWord = showWord.toLowerCase();
+      console.log( "Secret word - " + secretWord );
+      var word = new Word( secretWord );
+      var displayWord = word.getDisplay();
       console.log( "Display word " + displayWord );
       PromptForLetter();
     }
