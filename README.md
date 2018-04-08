@@ -1,5 +1,4 @@
 # Hangman Node.js
-Week 11 Assignment: Hangman
 
 ## Description
 Created a hangman game ran through Node.js and using JavaScript constructors.
