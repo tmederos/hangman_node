@@ -22,12 +22,12 @@ console.log( "" );
 function PromptForLetter(){
   //
   if ( word.checkSolved() ){
-    console.log( "Congratulations you guessed the word!  " + showWord );
+    console.log( 'Congratulations you guessed the word!  ' + showWord );
     restartGame();
     return;
   }
   if ( remainingGuesses === 0 ){
-    console.log( "Game Over. You ran out of guesses. The word was - " + showWord );
+    console.log( 'Game Over. You ran out of guesses. The word was - ' + showWord );
     restartGame();
     return;
   }
@@ -62,7 +62,7 @@ function PromptForLetter(){
         console.log( "Display Word: " + word.getDisplay() );
         console.log( "" );
         if ( correctGuess  === -1 ) {
-          remainingGuesses--      
+          remainingGuesses--
           console.log( "Incorrect, Try again! You have " + remainingGuesses + " guesses remaining."  );
           console.log( "Letters guessed: " + guessedArray );
           console.log( "" );
