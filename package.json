@@ -19,6 +19,6 @@
   "dependencies": {
     "inquirer": "^5.0.1",
     "is-letter": "^1.1.1",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.19"
   }
 }
